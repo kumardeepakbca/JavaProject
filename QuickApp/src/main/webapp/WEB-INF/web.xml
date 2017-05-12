@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!DOCTYPE web-app
+    PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+    "http://java.sun.com/dtd/web-app_2_3.dtd">
+
+<web-app>
+
+  <servlet>
+    <servlet-name>user</servlet-name>
+    <servlet-class>com.quickapp.LocationController</servlet-class>
+  </servlet>
+   <servlet>
+    <servlet-name>admin</servlet-name>
+    <servlet-class>com.quickapp.AdminController</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>user</servlet-name>
+    <url-pattern>/user</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>admin</servlet-name>
+    <url-pattern>/admin</url-pattern>
+  </servlet-mapping>
+  
+  <welcome-file-list>  
+   <welcome-file>user</welcome-file>  
+  </welcome-file-list>  
+</web-app>  
